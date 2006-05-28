@@ -1,12 +1,14 @@
 ---
 name: Template-Plugin-AudioFile-Info
-version: 1.03
+version: 1.04
 author:
   - 'Dave Cross, E<lt>dave@dave.org.ukE<gt>'
 abstract: |-
   Template Toolkit plugin for
   AudioFile::Info
 license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
   AudioFile::Info: 0
   Template: 0
@@ -14,5 +16,8 @@ requires:
 provides:
   Template::Plugin::AudioFile::Info:
     file: lib/Template/Plugin/AudioFile/Info.pm
-    version: 1.03
-generated_by: Module::Build version 0.261
+    version: 1.04
+generated_by: Module::Build version 0.2801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

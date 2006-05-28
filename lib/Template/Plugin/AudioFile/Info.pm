@@ -11,7 +11,7 @@ require Exporter;
 
 our @ISA = qw(Exporter AudioFile::Info Template::Plugin);
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.3 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.4 $ ' =~ /(\d+)\.(\d+)/;
 
 sub new {
   my ($class, $context, $file) = @_;
@@ -72,6 +72,7 @@ like this.
 
     $tt->process('song.tt', { file => $_ })
       or die $tt->error;
+  }
 
 There are, of course, many other ways to do it.
 
